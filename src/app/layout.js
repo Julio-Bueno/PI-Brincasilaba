@@ -1,5 +1,7 @@
 import "./globals.css";
 import {Montserrat} from "next/font/google";
+import { Header } from "./components/header";
+import { Footer } from "./components/footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -12,15 +14,18 @@ export const metadata = {
   title: "BrincaSilaba",
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br" className = {montserrat.variable}
     >
       
       <body>
+        <Header/>
         {children}
+        <Footer/>
       </body>
-
+      
     </html>
   );
 }
