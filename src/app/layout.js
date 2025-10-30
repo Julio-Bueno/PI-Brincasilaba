@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     >
       
       <body>
-        <Header/>
+        <Header className = "display flex items-center justify-center"/>
         {children}
         <Footer/>
       </body>
