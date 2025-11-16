@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-    <div className = "flex items-center justify-center bg-[url(/img/background.png)] bg-local">
+    <div className = "flex items-center justify-center h-screen bg-[url('/img/background.png')] bg-cover">
       <div className = "flex items-center justify-center text-center w-200 text-2xl text-black bg-white rounded-2xl border-6 border-blue-500 mt-20">
         <h1 className = "flex items-center justify-center mt-3 mb-3">Quem somos!<br/>
           ☀️ Somos uma iniciativa dedicada a apoiar educadores do ensino primário e fundamental, oferecendo ferramentas de qualidade para enriquecer o processo de alfabetização e aprendizagem das crianças. <br/>
@@ -16,16 +16,16 @@ export default function Home() {
       </div>
     </div>
     <div className = "bg-transparent">
-      <Link href = "../register" className = "flex items-center justify-center mt-10 ">
+      <Link href = "../silabas" className = "flex items-center justify-center">
         <button className="px-4 py-2 bg-white text-black text-4xl rounded hover:bg-gray-700 transition duration-300) border-3 border-blue-500 rounded-2xl block"> 
-          Cadastre-se!
+          Sílabas
         </button></Link>
-      <Link href = "../login" className = "flex items-center justify-center pt-4">
+      <Link href = "../matematica" className = "flex items-center justify-center pt-4">
         <button className="px-4 py-2 bg-white text-black text-4xl rounded hover:bg-gray-700 transition dutation-300 border-3 border-blue-500 rounded-2xl">
-          Entrar 
+          Matemática 
         </button>
       </Link>
-      </div>
+    </div>
     </>
   );
 }
