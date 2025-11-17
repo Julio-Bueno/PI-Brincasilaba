@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Montserrat } from "next/font/google";
-import { Header } from "./components/header";
-import { Footer } from "./components/footer";
+import { Header } from "./componentes/header";
+import { Footer } from "./componentes/footer";
 
 
 const montserrat = Montserrat({
