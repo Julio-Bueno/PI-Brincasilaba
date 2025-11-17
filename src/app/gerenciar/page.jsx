@@ -97,105 +97,105 @@ export default function Gerenciar() {
 
          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
 
-             {/* ESCOLA */}
+            {/* ESCOLA */}
             <div className="bg-white shadow p-6 rounded-xl">
-                <h2 className="text-xl font-bold mb-4">Cadastrar Escola</h2>
+              <h2 className="text-xl font-bold mb-4">Cadastrar Escola</h2>
 
-                <input
-                 type="text"
-                 className="border text-black rounded w-95 mb-17"
-                 placeholder="Nome da Escola"
-                 value={nomeEscola}
-                 onChange={(e) => setNomeEscola(e.target.value)}
-                 />
-
-                <input
-                 type="number"
-                 className="border text-black rounded w-full mb-3"
-                 placeholder="ID da Escola"
-                 value={idParaEscola}
-                 onChange={(e) => setIdParaEscola(e.target.value)}
+              <input
+                type="text"
+                className="border text-black rounded w-95 mb-17"
+                placeholder="Nome da Escola"
+                value={nomeEscola}
+                onChange={(e) => setNomeEscola(e.target.value)}
                 />
 
-                <button
+              <input
+                type="number"
+                className="border text-black rounded w-full mb-3"
+                placeholder="ID da Escola"
+                value={idParaEscola}
+                onChange={(e) => setIdParaEscola(e.target.value)}
+              />
+
+              <button
                 onClick={salvarEscola}
                 className="bg-blue-600 text-white w-full p-2 rounded"
-                >
-                 Salvar Escola
-                </button>
+              >
+                Salvar Escola
+              </button>
               
             </div>
 
-        {/* PROFESSOR */}
-        <div className="bg-white shadow p-6 rounded-xl">
-          <h2 className="text-xl font-bold mb-4">Cadastrar Professor</h2>
+            {/* PROFESSOR */}
+            <div className="bg-white shadow p-6 rounded-xl">
+              <h2 className="text-xl font-bold mb-4">Cadastrar Professor</h2>
 
-          <input
-            type="text"
-            className="border text-black rounded w-full mb-27"
-            placeholder="Nome do Professor"
-            value={nomeProfessor}
-            onChange={(e) => setNomeProfessor(e.target.value)}
-          />
+              <input
+                type="text"
+                className="border text-black rounded w-full mb-27"
+                placeholder="Nome do Professor"
+                value={nomeProfessor}
+                onChange={(e) => setNomeProfessor(e.target.value)}
+              />
 
-          <button
-            onClick={salvarProfessor}
-            className="bg-blue-600 text-white w-full p-2 rounded"
-          >
-            Salvar Professor
-          </button>
-        </div>
+              <button
+                onClick={salvarProfessor}
+                className="bg-blue-600 text-white w-full p-2 rounded"
+              >
+                Salvar Professor
+              </button>
+            </div>
 
-        {/* CLASSE */}
-        <div className="bg-white shadow p-6 rounded-xl">
-          <h2 className="text-xl font-bold mb-4">Cadastrar Classe</h2>
+            {/*  CLASSE */}
+            <div className="bg-white shadow p-6 rounded-xl">
+              <h2 className="text-xl font-bold mb-4">Cadastrar Classe</h2>
 
-          <input
-            type="text"
-            className="border text-black rounded w-full mb-27"
-            placeholder="Nome da Classe"
-            value={nomeClasse}
-            onChange={(e) => setNomeClasse(e.target.value)}
-          />
+              <input
+              type="text"
+              className="border text-black rounded w-full mb-27"
+              placeholder="Nome da Classe"
+              value={nomeClasse}
+              onChange={(e) => setNomeClasse(e.target.value)}
+              />
 
-          <button
-            onClick={salvarClasse}
-            className="bg-blue-600 text-white w-full p-2 rounded"
-          >
-            Salvar Classe
-          </button>
-        </div>
+              <button
+                onClick={salvarClasse}
+                className="bg-blue-600 text-white w-full p-2 rounded"
+              >
+                Salvar Classe
+              </button>
+          </div>
 
-        {/* ALUNO */}
-        <div className="bg-white shadow p-6 rounded-xl">
-          <h2 className="text-xl font-bold mb-4">Cadastrar Aluno</h2>
+            {/* ALUNO */}
+            <div className="bg-white shadow p-6 rounded-xl">
+              <h2 className="text-xl font-bold mb-4">Cadastrar Aluno</h2>
 
-          <input
-            type="number"
-            className="border text-black rounded w-full mb-17"
-            placeholder="ID da Escola"
-            value={nomeAluno}
-            onChange={(e) => setNomeAluno(e.target.value)}
-          />
+              <input
+                type="number"
+                className="border text-black rounded w-full mb-17"
+                placeholder="ID da Escola"
+                value={nomeAluno}
+                onChange={(e) => setNomeAluno(e.target.value)}
+              />
 
-          <input
-            type="number"
-            className="border text-black rounded w-full mb-3"
-            placeholder="ID da Classe"
-            value={idAluno}
-            onChange={(e) => setAluno(e.target.value)}
-          />
+              <input
+                type="number"
+                className="border text-black rounded w-full mb-3"
+                placeholder="ID da Classe"
+                value={idAluno}
+                onChange={(e) => setAluno(e.target.value)}
+              />
 
-          <button
-            onClick={salvarAluno}
-            className="bg-blue-600 text-white w-full p-2 rounded"
-          >
-            Salvar Aluno
-          </button>
-        </div>
+              <button
+                onClick={salvarAluno}
+                className="bg-blue-600 text-white w-full p-2 rounded"
+              >
+                Salvar Aluno
+              </button>
+            </div>
 
-      </div>
-     </div>
+          </div>
+      </div>
     </div>
   );
 }
